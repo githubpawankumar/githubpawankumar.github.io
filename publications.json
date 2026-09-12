@@ -68,11 +68,11 @@
     "platform": "Current manuscript",
     "canonical_url": "",
     "doi": "",
-    "abstract": "Develops a governed supplier-risk intelligence artifact combining supplier identity, multi-signal feature engineering, explainable scoring, event correlation, analyst review, and mitigation workflow.",
+    "abstract": "Develops and evaluates a governed supplier-risk intelligence artifact combining supplier identity, multi-signal feature engineering, explainable scoring, event correlation, analyst review, and human-governed mitigation workflows.",
     "research_question": "How should an enterprise system combine multi-signal supplier-risk analytics, business criticality, explainability, materiality controls, and human mitigation workflow?",
     "method": "Design Science Research using a synthetic panel of 2,500 suppliers over 18 monthly periods with a temporal train/test split.",
     "findings": "A financial-only baseline achieved ROC-AUC 0.909 and F1 0.803; the governed multi-signal model achieved ROC-AUC 0.998 and F1 0.987. The study explicitly treats these unusually clean synthetic results as a limitation and does not claim field performance.",
-    "contribution": "Separates risk probability from supplier criticality and frames AI as a ranking/explanation layer while sourcing and risk professionals retain mitigation authority.",
+    "contribution": "Separates risk probability from supplier criticality and positions AI as a ranking and explanation layer, while sourcing and risk professionals retain decision and mitigation authority.",
     "keywords": "Supplier risk; supply chain resilience; early warning; explainable AI; procurement; human-AI governance"
   },
   {
