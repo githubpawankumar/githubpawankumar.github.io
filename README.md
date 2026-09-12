@@ -1,9 +1,9 @@
 # Pawan Kumar Singh — Final Current Research Website
 
-This package is the current public-facing version of the research site.
+This package is the continuously updated public-facing research and publications site.
 
 ## What it shows
-- 13 current V5 research manuscripts
+- Current research manuscripts and professional publications
 - Contract Intelligence identified as submitted to Information Systems Frontiers
 - LinkedIn business article hub
 - ORCID, LinkedIn, and GitHub profile links
