@@ -76,108 +76,23 @@
     </section>
 
     <section id="publications" class="section">
-      <div class="container">
-        <p class="eyebrow">PUBLICATIONS & RESEARCH</p>
-        <div class="section-head">
-          <div>
-            <h2>Selected research</h2>
-            <p>Publication status is shown explicitly. Journal, DOI, SSRN, data, and code links can be added as each record becomes public.</p>
-          </div>
-        </div>
-        <div class="pub-grid">
-          
-<article class="pub-card" data-topic="Governed Enterprise AI">
-  <div class="pub-meta"><span>2026</span><span>•</span><span>Research Manuscript</span></div>
-  <h3>Designing Human-Governed Contract Intelligence</h3>
-  <p class="pub-subtitle">A Controlled Design-Science Evaluation of Authority-Aware Retrieval, Human Decision Rights, and Transaction Compliance</p>
-  <div class="pub-footer">
-    <span class="tag">Governed Enterprise AI</span>
-    <span class="status">Submitted to Information Systems Frontiers</span>
+  <div class="container">
+    <p class="eyebrow">RESEARCH OUTPUTS</p>
+    <h2>Research, white papers & business articles</h2>
+    <p class="inventory-note">This page presents the current verified research portfolio. Full manuscript PDFs are not posted here unless they are already public through an authorized publication or repository. Published articles and related public research are connected through LinkedIn, ORCID, and future DOI records.</p>
+
+    <div class="profile-strip">
+      <a href="https://orcid.org/0009-0008-4802-8340" target="_blank" rel="noopener"><strong>ORCID</strong><span>Author identity</span></a>
+      <a href="https://www.linkedin.com/in/pawankumarsingh/recent-activity/articles/" target="_blank" rel="noopener"><strong>LinkedIn Articles</strong><span>Business writing</span></a>
+      <a href="https://github.com/githubpawankumar" target="_blank" rel="noopener"><strong>GitHub</strong><span>Research site & code</span></a>
+      <a href="https://www.linkedin.com/in/pawankumarsingh/recent-activity/articles/" target="_blank" rel="noopener"><strong>Published Writing</strong><span>LinkedIn hub for articles & connected research</span></a>
+    </div>
+
+    <div id="publication-index"></div>
   </div>
-</article>
+</section>
 
-
-<article class="pub-card" data-topic="Governed Enterprise AI">
-  <div class="pub-meta"><span>2026</span><span>•</span><span>Research Manuscript</span></div>
-  <h3>From Copilots to Governed Enterprise Execution</h3>
-  <p class="pub-subtitle">A Design Science Architecture for Context-Aware and Human-Governed Agentic AI</p>
-  <div class="pub-footer">
-    <span class="tag">Governed Enterprise AI</span>
-    <span class="status">Research manuscript</span>
-  </div>
-</article>
-
-
-<article class="pub-card" data-topic="Procurement & Supply Chain AI">
-  <div class="pub-meta"><span>2026</span><span>•</span><span>Research Manuscript</span></div>
-  <h3>From Spend Visibility to Governed Spend Intelligence</h3>
-  <p class="pub-subtitle">A Design Science Architecture for AI-Assisted Classification, Opportunity Discovery, and Finance-Validated Value</p>
-  <div class="pub-footer">
-    <span class="tag">Procurement & Supply Chain AI</span>
-    <span class="status">Research manuscript</span>
-  </div>
-</article>
-
-
-<article class="pub-card" data-topic="Procurement & Supply Chain AI">
-  <div class="pub-meta"><span>2026</span><span>•</span><span>Research Manuscript</span></div>
-  <h3>From Natural-Language Need to Governed ERP Requisition</h3>
-  <p class="pub-subtitle">A Design Science Architecture for AI-Assisted Purchase Requisition Generation</p>
-  <div class="pub-footer">
-    <span class="tag">Procurement & Supply Chain AI</span>
-    <span class="status">Research manuscript</span>
-  </div>
-</article>
-
-
-<article class="pub-card" data-topic="Procurement & Supply Chain AI">
-  <div class="pub-meta"><span>2026</span><span>•</span><span>Research Manuscript</span></div>
-  <h3>Governing AI-Assisted Purchase Order Generation</h3>
-  <p class="pub-subtitle">A Design Science Architecture for Contract-Aware Drafting, Deterministic Validation, and Transaction-Safe ERP Execution</p>
-  <div class="pub-footer">
-    <span class="tag">Procurement & Supply Chain AI</span>
-    <span class="status">Research manuscript</span>
-  </div>
-</article>
-
-
-<article class="pub-card" data-topic="Procurement & Supply Chain AI">
-  <div class="pub-meta"><span>2026</span><span>•</span><span>White Paper</span></div>
-  <h3>Supplier Risk Intelligence with AI</h3>
-  <p class="pub-subtitle">Continuous Supplier Risk Sensing, Explainable AI, Early Warning and Human-Governed Mitigation</p>
-  <div class="pub-footer">
-    <span class="tag">Procurement & Supply Chain AI</span>
-    <span class="status">White paper</span>
-  </div>
-</article>
-
-
-<article class="pub-card" data-topic="Procurement & Supply Chain AI">
-  <div class="pub-meta"><span>2026</span><span>•</span><span>White Paper</span></div>
-  <h3>Predictive Demand and Inventory Optimization with AI</h3>
-  <p class="pub-subtitle">AI-Powered Demand Sensing, Probabilistic Forecasting, Inventory Policy Optimization and Planner-Governed Execution</p>
-  <div class="pub-footer">
-    <span class="tag">Procurement & Supply Chain AI</span>
-    <span class="status">White paper</span>
-  </div>
-</article>
-
-
-<article class="pub-card" data-topic="Real Estate / IWMS AI">
-  <div class="pub-meta"><span>2026</span><span>•</span><span>Research Manuscript</span></div>
-  <h3>AI-Enabled Real Estate and Lease Accounting</h3>
-  <p class="pub-subtitle">A Governed Enterprise Architecture for Lease Intelligence, Financial Compliance, and Portfolio Decision-Making</p>
-  <div class="pub-footer">
-    <span class="tag">Real Estate / IWMS AI</span>
-    <span class="status">Research manuscript</span>
-  </div>
-</article>
-
-        </div>
-      </div>
-    </section>
-
-    <section id="articles" class="section alt">
+<section id="articles" class="section alt">
       <div class="container">
         <p class="eyebrow">BUSINESS & PROFESSIONAL WRITING</p>
         <h2>Translating research into enterprise practice</h2>
@@ -225,5 +140,45 @@
       <span>Independent Researcher • Enterprise AI & Information Systems</span>
     </div>
   </footer>
+
+<script>
+async function loadPublications(){
+  const target = document.getElementById('publication-index');
+  try{
+    const res = await fetch('publications.json', {cache:'no-store'});
+    const items = await res.json();
+    const order = ['Journal Submission','Core Enterprise AI Research','Capital Projects, Facilities & Real Estate Research','Business Articles'];
+    for (const group of order){
+      const rows = items.filter(x => x.group === group);
+      if (!rows.length) continue;
+      const section = document.createElement('div');
+      section.className = 'pub-group';
+      section.innerHTML = `<h3 class="group-title">${group}</h3><div class="pub-grid"></div>`;
+      const grid = section.querySelector('.pub-grid');
+      for (const p of rows){
+        const links = [];
+        if (p.canonical_url) links.push(`<a class="paper-link" href="${p.canonical_url}" target="_blank" rel="noopener">View record ↗</a>`);
+        if (p.doi) links.push(`<a class="paper-link" href="https://doi.org/${p.doi}" target="_blank" rel="noopener">DOI ↗</a>`);
+        const card = document.createElement('article');
+        card.className = 'pub-card';
+        card.innerHTML = `
+          <div class="pub-meta"><span>${p.year}</span><span>•</span><span>${p.type}</span></div>
+          <h3>${p.title}</h3>
+          <p class="pub-subtitle">${p.subtitle || ''}</p>
+          <div class="record-row"><span><b>Status:</b> ${p.status}</span><span><b>Version:</b> ${p.version || '—'}</span></div>
+          <div class="pub-footer"><span class="tag">${p.topic}</span><span class="status">${p.platform || ''}</span></div>
+          ${links.length ? `<div class="paper-links">${links.join(' ')}</div>` : ''}
+        `;
+        grid.appendChild(card);
+      }
+      target.appendChild(section);
+    }
+  } catch (e) {
+    target.innerHTML = '<p>Publication index could not be loaded. Please refresh the page.</p>';
+  }
+}
+loadPublications();
+</script>
+
 </body>
 </html>

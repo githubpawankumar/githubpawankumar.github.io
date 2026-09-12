@@ -66,3 +66,16 @@ footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-s
   .feature-card{align-items:flex-start;flex-direction:column}
   .footer-inner{flex-direction:column}
 }
+
+.pub-group{margin-top:38px}
+.group-title{font-size:25px;margin:0 0 15px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+
+.inventory-note{max-width:830px;color:var(--muted);margin-top:-10px;margin-bottom:24px}
+.profile-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:24px 0 36px}
+.profile-strip a,.profile-placeholder{display:flex;flex-direction:column;padding:15px 16px;border:1px solid var(--line);border-radius:12px;background:#fff;text-decoration:none;color:var(--ink)}
+.profile-strip span{font-size:12px;color:var(--muted);margin-top:3px}
+.profile-placeholder{opacity:.68}
+.record-row{display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:12px;color:var(--muted);padding-top:8px}
+.paper-links{margin-top:14px}
+.paper-link{font-size:13px;font-weight:750;color:var(--accent);text-decoration:none;margin-right:12px}
+@media(max-width:820px){.profile-strip{grid-template-columns:1fr 1fr}.record-row{grid-template-columns:1fr}}
