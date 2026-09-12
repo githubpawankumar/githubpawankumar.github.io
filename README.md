@@ -31,3 +31,17 @@ Upload/replace:
 - publications.json
 
 You may also upload this README.md, but it is not required by the live site.
+
+
+## Clickable research cards
+
+Each research card opens an on-site detail modal containing:
+- research summary
+- research question
+- methodology
+- key findings
+- research contribution
+- keywords
+- publication status
+
+No manuscript PDF or download link is exposed. When an official publication or DOI becomes public, add `canonical_url` and/or `doi` to the matching record in `publications.json`.

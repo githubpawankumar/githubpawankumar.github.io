@@ -141,7 +141,61 @@
     </div>
   </footer>
 
+<div id="publication-modal" class="modal" aria-hidden="true">
+  <div class="modal-backdrop" data-close-modal></div>
+  <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <button class="modal-close" type="button" aria-label="Close details" data-close-modal>×</button>
+    <div class="modal-meta" id="modal-meta"></div>
+    <h2 id="modal-title"></h2>
+    <p class="modal-subtitle" id="modal-subtitle"></p>
+    <div class="modal-status" id="modal-status"></div>
+    <div class="detail-grid">
+      <section><h3>Research Summary</h3><p id="modal-abstract"></p></section>
+      <section><h3>Research Question</h3><p id="modal-rq"></p></section>
+      <section><h3>Methodology</h3><p id="modal-method"></p></section>
+      <section><h3>Key Findings</h3><p id="modal-findings"></p></section>
+      <section><h3>Research Contribution</h3><p id="modal-contribution"></p></section>
+      <section><h3>Keywords</h3><p id="modal-keywords"></p></section>
+    </div>
+    <div class="modal-actions" id="modal-actions"></div>
+    <p class="modal-note">No manuscript PDF is distributed from this site. Official publication or DOI links will be added when publicly available.</p>
+  </div>
+</div>
+
+
 <script>
+
+function openPublicationModal(p){
+  const modal = document.getElementById('publication-modal');
+  document.getElementById('modal-meta').textContent = `${p.year} • ${p.type}`;
+  document.getElementById('modal-title').textContent = p.title || '';
+  document.getElementById('modal-subtitle').textContent = p.subtitle || '';
+  document.getElementById('modal-status').innerHTML =
+    `<span class="tag">${p.topic || ''}</span><span><b>Status:</b> ${p.status || ''}</span>`;
+  document.getElementById('modal-abstract').textContent = p.abstract || 'Summary will be added when available.';
+  document.getElementById('modal-rq').textContent = p.research_question || 'Research question summary will be added when available.';
+  document.getElementById('modal-method').textContent = p.method || 'Methodology summary will be added when available.';
+  document.getElementById('modal-findings').textContent = p.findings || 'Findings summary will be added when available.';
+  document.getElementById('modal-contribution').textContent = p.contribution || 'Contribution summary will be added when available.';
+  document.getElementById('modal-keywords').textContent = p.keywords || '';
+  const actions = [];
+  if (p.canonical_url) actions.push(`<a class="btn primary" href="${p.canonical_url}" target="_blank" rel="noopener">View Public Record ↗</a>`);
+  if (p.doi) actions.push(`<a class="btn" href="https://doi.org/${p.doi}" target="_blank" rel="noopener">View DOI ↗</a>`);
+  document.getElementById('modal-actions').innerHTML = actions.join('');
+  modal.classList.add('open');
+  modal.setAttribute('aria-hidden','false');
+  document.body.classList.add('modal-open');
+  setTimeout(()=>modal.querySelector('.modal-close').focus(),0);
+}
+function closePublicationModal(){
+  const modal = document.getElementById('publication-modal');
+  modal.classList.remove('open');
+  modal.setAttribute('aria-hidden','true');
+  document.body.classList.remove('modal-open');
+}
+document.querySelectorAll('[data-close-modal]').forEach(el => el.addEventListener('click', closePublicationModal));
+document.addEventListener('keydown', e => { if(e.key === 'Escape') closePublicationModal(); });
+
 async function loadPublications(){
   const target = document.getElementById('publication-index');
   try{
@@ -160,15 +214,22 @@ async function loadPublications(){
         if (p.canonical_url) links.push(`<a class="paper-link" href="${p.canonical_url}" target="_blank" rel="noopener">View record ↗</a>`);
         if (p.doi) links.push(`<a class="paper-link" href="https://doi.org/${p.doi}" target="_blank" rel="noopener">DOI ↗</a>`);
         const card = document.createElement('article');
-        card.className = 'pub-card';
+        card.className = 'pub-card clickable';
+        card.setAttribute('tabindex','0');
+        card.setAttribute('role','button');
+        card.setAttribute('aria-label',`Open details for ${p.title}`);
         card.innerHTML = `
-          <div class="pub-meta"><span>${p.year}</span><span>•</span><span>${p.type}</span></div>
+          <div class="pub-meta"><span>${p.year}</span><span>•</span><span>${p.group === 'Journal Submission' ? 'JOURNAL MANUSCRIPT' : p.type.toUpperCase()}</span></div>
           <h3>${p.title}</h3>
           <p class="pub-subtitle">${p.subtitle || ''}</p>
-          <div class="record-row"><span><b>Status:</b> ${p.status}</span><span><b>Version:</b> ${p.version || '—'}</span></div>
-          <div class="pub-footer"><span class="tag">${p.topic}</span><span class="status">${p.platform || ''}</span></div>
+          ${p.group === 'Journal Submission' ? `<div class="record-row"><span><b>${p.status}</b></span></div>` : ''}
+          <div class="pub-footer"><span class="tag">${p.topic}</span><span class="status">${p.group === 'Journal Submission' ? 'Under journal consideration' : (p.group === 'Business Articles' ? p.platform : 'Independent Research')}</span></div>
           ${links.length ? `<div class="paper-links">${links.join(' ')}</div>` : ''}
         `;
+        card.addEventListener('click', () => openPublicationModal(p));
+        card.addEventListener('keydown', (ev) => {
+          if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); openPublicationModal(p); }
+        });
         grid.appendChild(card);
       }
       target.appendChild(section);

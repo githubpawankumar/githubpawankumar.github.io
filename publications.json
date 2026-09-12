@@ -6,11 +6,17 @@
     "type": "Research Manuscript",
     "status": "Submitted to Information Systems Frontiers",
     "year": "2026",
-    "version": "Research Manuscript \u2014 2026",
+    "version": "Research Manuscript — 2026",
     "topic": "Governed Enterprise AI",
     "platform": "Journal submission",
     "canonical_url": "",
-    "doi": ""
+    "doi": "",
+    "abstract": "Develops and evaluates a human-governed contract-intelligence artifact that combines versioned evidence, semantic normalization, task-context retrieval, role-based access, accountable human decision rights, obligation activation, and deterministic transaction controls.",
+    "research_question": "How should enterprise contract intelligence connect probabilistic interpretation and retrieval to authoritative, governed operational execution?",
+    "method": "Design Science Research using a controlled synthetic benchmark of 36,000 clause records, 5,000 retrieval queries, and 20,000 transaction cases across two independent random seeds.",
+    "findings": "The governed method achieved mean Hit@1 of 91.1% versus 12.6% for a semantic-only baseline, eliminated observed wrong-version retrieval and permission leakage within the benchmark, and produced 89.3% correct automated transaction decisions while abstaining on unresolved cases.",
+    "contribution": "Positions contract intelligence as an end-to-end governed information system rather than a stand-alone language-model task, with explicit separation between evidence, authority, human decision rights, and transactional controls.",
+    "keywords": "Contract intelligence; RAG; enterprise information systems; design science research; human-AI governance; transaction compliance"
   },
   {
     "group": "Core Enterprise AI Research",
@@ -19,11 +25,17 @@
     "type": "Research Manuscript",
     "status": "Research manuscript",
     "year": "2026",
-    "version": "Research Manuscript \u2014 2026",
+    "version": "Research Manuscript — 2026",
     "topic": "Procurement & Spend Intelligence",
     "platform": "Current manuscript",
     "canonical_url": "",
-    "doi": ""
+    "doi": "",
+    "abstract": "Develops a governed spend-intelligence artifact integrating supplier normalization, machine-learning classification, semantic spend modeling, opportunity detection, human review, and finance validation.",
+    "research_question": "How should enterprise spend intelligence combine AI-based classification and opportunity discovery with governance controls so recommendations remain traceable, reviewable, and financially measurable?",
+    "method": "Design Science Research using a controlled synthetic benchmark of 30,000 procurement transactions and 800 suppliers.",
+    "findings": "The governed hybrid classifier achieved 95.9% accuracy and 0.959 macro-F1 versus 79.9% and 0.815 for a description-only baseline. High-confidence predictions achieved 100.0% accuracy on the held-out split while routing 35.9% of records for human review. Supplier alias normalization achieved 100.0% accuracy under controlled perturbations; opportunity detection remained the weakest component.",
+    "contribution": "Connects AI classification to supplier resolution, confidence-based review, commercial opportunity detection, and finance-certified value realization rather than treating spend classification as an isolated model task.",
+    "keywords": "Spend intelligence; procurement analytics; AI classification; supplier normalization; design science; human-AI governance"
   },
   {
     "group": "Core Enterprise AI Research",
@@ -32,11 +44,17 @@
     "type": "Research Manuscript",
     "status": "Research manuscript",
     "year": "2026",
-    "version": "Research Manuscript \u2014 2026",
+    "version": "Research Manuscript — 2026",
     "topic": "Enterprise AI Architecture",
     "platform": "Current manuscript",
     "canonical_url": "",
-    "doi": ""
+    "doi": "",
+    "abstract": "Presents an integrated enterprise AI architecture spanning experience, orchestration, intelligence, context, systems/data, governance, and observability, with systems of record remaining authoritative.",
+    "research_question": "How should enterprise architecture enforce authority in retrieval and gate agentic tool execution so AI can act without displacing authoritative data, permissions, workflow state, or accountable human decision rights?",
+    "method": "Design Science Research with two controlled synthetic experiments: a 25,000-record knowledge corpus with 5,000 queries and a 10,000-scenario action-governance benchmark.",
+    "findings": "Governed retrieval achieved 97.8% Hit@1 on authorized queries versus 52.0% for similarity-only retrieval and eliminated stale/non-authoritative exposure within the benchmark. Risk-based action controls reduced unsafe direct execution from 62.0% to 0.0%.",
+    "contribution": "Defines where probabilistic reasoning belongs, where deterministic control must intervene, and how systems of record preserve transaction authority in agentic enterprise AI.",
+    "keywords": "Enterprise AI; agentic AI; enterprise architecture; RAG; orchestration; systems of record; governance"
   },
   {
     "group": "Core Enterprise AI Research",
@@ -45,11 +63,17 @@
     "type": "Research Manuscript",
     "status": "Research manuscript",
     "year": "2026",
-    "version": "Research Manuscript \u2014 2026",
+    "version": "Research Manuscript — 2026",
     "topic": "Supplier Risk",
     "platform": "Current manuscript",
     "canonical_url": "",
-    "doi": ""
+    "doi": "",
+    "abstract": "Develops a governed supplier-risk intelligence artifact combining supplier identity, multi-signal feature engineering, explainable scoring, event correlation, analyst review, and mitigation workflow.",
+    "research_question": "How should an enterprise system combine multi-signal supplier-risk analytics, business criticality, explainability, materiality controls, and human mitigation workflow?",
+    "method": "Design Science Research using a synthetic panel of 2,500 suppliers over 18 monthly periods with a temporal train/test split.",
+    "findings": "A financial-only baseline achieved ROC-AUC 0.909 and F1 0.803; the governed multi-signal model achieved ROC-AUC 0.998 and F1 0.987. The study explicitly treats these unusually clean synthetic results as a limitation and does not claim field performance.",
+    "contribution": "Separates risk probability from supplier criticality and frames AI as a ranking/explanation layer while sourcing and risk professionals retain mitigation authority.",
+    "keywords": "Supplier risk; supply chain resilience; early warning; explainable AI; procurement; human-AI governance"
   },
   {
     "group": "Core Enterprise AI Research",
@@ -58,11 +82,17 @@
     "type": "Research Manuscript",
     "status": "Research manuscript",
     "year": "2026",
-    "version": "Research Manuscript \u2014 2026",
+    "version": "Research Manuscript — 2026",
     "topic": "Procurement & ERP",
     "platform": "Current manuscript",
     "canonical_url": "",
-    "doi": ""
+    "doi": "",
+    "abstract": "Develops a governed purchase-order architecture in which AI assists drafting and explanation while deterministic validation and authorized enterprise writes retain transaction authority.",
+    "research_question": "How should AI-assisted PO generation preserve contract validity, supplier eligibility, accounting validity, pricing tolerance, approval authority, idempotency, and supplier dispatch control?",
+    "method": "Design Science Research using a controlled synthetic benchmark of 25,000 PO scenarios.",
+    "findings": "Unsafe PO creation fell from 15.5% to 0.0%, duplicate creation under retries from 1.8% to 0.0%, and incorrect supplier dispatch from 3.9% to 0.0% within the controlled benchmark. The study also measures the friction cost of deterministic gating.",
+    "contribution": "Establishes a transaction boundary where AI output remains a draft until authoritative procurement and ERP controls validate and commit it.",
+    "keywords": "Purchase order; procurement; generative AI; contract intelligence; ERP integration; idempotency; human approval"
   },
   {
     "group": "Core Enterprise AI Research",
@@ -71,11 +101,17 @@
     "type": "Research Manuscript",
     "status": "Research manuscript",
     "year": "2026",
-    "version": "Research Manuscript \u2014 2026",
+    "version": "Research Manuscript — 2026",
     "topic": "Procurement & ERP",
     "platform": "Current manuscript",
     "canonical_url": "",
-    "doi": ""
+    "doi": "",
+    "abstract": "Develops a governed AI-assisted requisition artifact that converts natural-language business need into structured ERP requisitions while preserving policy, budget, master-data, approval, and transaction integrity.",
+    "research_question": "How should an AI-assisted requisition artifact combine natural-language understanding, retrieval, classification, deterministic validation, human review, and ERP creation without turning the model into a purchasing authority?",
+    "method": "Design Science Research using 24,000 synthetic requisition requests with known category and control states.",
+    "findings": "Category classification achieved 78.5% accuracy and 0.793 macro-F1. High-confidence predictions achieved 100.0% accuracy while routing 24.5% of requests for review. Unsafe ERP submission fell from 9.8% in an unrestricted baseline to 0.0% under governed controls within the benchmark.",
+    "contribution": "Shows how AI can interpret and draft while deterministic services validate, accountable users approve, and ERP remains authoritative; it also introduces a targeted clarification-loop design for ambiguous fields.",
+    "keywords": "Purchase requisition; procurement; NLP; RAG; ERP; human-in-the-loop; design science; enterprise AI"
   },
   {
     "group": "Capital Projects, Facilities & Real Estate Research",
@@ -84,11 +120,17 @@
     "type": "Research Manuscript",
     "status": "Research manuscript",
     "year": "2026",
-    "version": "Research Manuscript \u2014 2026",
+    "version": "Research Manuscript — 2026",
     "topic": "Capital Projects",
     "platform": "Current manuscript",
     "canonical_url": "",
-    "doi": ""
+    "doi": "",
+    "abstract": "Proposes a governed capital-project procurement architecture in which AI-assisted multi-criteria bid intelligence supports professionals while deterministic eligibility, conflict, sanctions, and approval controls remain authoritative.",
+    "research_question": "Can AI-assisted multi-criteria bid intelligence improve decision support without bypassing mandatory procurement controls, and what false-block versus unsafe-selection trade-offs emerge?",
+    "method": "Design Science Research using a reproducible 18,000-case synthetic bid benchmark.",
+    "findings": "The benchmark evaluates governed versus ungoverned selection behavior under policy exceptions, missing/invalid data, and other failure modes. Results are treated as mechanism tests rather than field-deployment evidence.",
+    "contribution": "Provides an auditable architecture for combining AI-assisted bid ranking with policy controls and accountable human award decisions.",
+    "keywords": "Capital projects; procurement; competitive bidding; AI governance; decision support"
   },
   {
     "group": "Capital Projects, Facilities & Real Estate Research",
@@ -97,11 +139,17 @@
     "type": "Research Manuscript",
     "status": "Research manuscript",
     "year": "2026",
-    "version": "Research Manuscript \u2014 2026",
+    "version": "Research Manuscript — 2026",
     "topic": "Capital Projects",
     "platform": "Current manuscript",
     "canonical_url": "",
-    "doi": ""
+    "doi": "",
+    "abstract": "Develops a governed architecture for AI-assisted PO preparation in capital projects, including exception handling, approval validation, idempotent ERP writes, committed-state verification, and supplier dispatch.",
+    "research_question": "How should AI-assisted PO preparation be separated from authoritative ERP execution, and how do idempotency and committed-state validation affect integration failures?",
+    "method": "Design Science Research using a reproducible 22,000-case synthetic PO benchmark plus integration-failure simulation.",
+    "findings": "The governed policy achieved a 0.0000 duplicate rate and 0.0000 premature-dispatch rate in the controlled benchmark, with a 0.9473 success rate versus 0.9177 for the naive policy.",
+    "contribution": "Extends governed AI into capital-project transaction execution with explicit recovery, idempotency, and committed-state controls.",
+    "keywords": "Capital projects; purchase orders; ERP; idempotency; transaction governance"
   },
   {
     "group": "Capital Projects, Facilities & Real Estate Research",
@@ -110,11 +158,17 @@
     "type": "Research Manuscript",
     "status": "Research manuscript",
     "year": "2026",
-    "version": "Research Manuscript \u2014 2026",
+    "version": "Research Manuscript — 2026",
     "topic": "Capital Projects",
     "platform": "Current manuscript",
     "canonical_url": "",
-    "doi": ""
+    "doi": "",
+    "abstract": "Proposes a governed contract and change-order intelligence architecture that separates probabilistic extraction/retrieval from authoritative document hierarchy, role authorization, delegation limits, and human approval.",
+    "research_question": "How can contract/change-order intelligence respect document hierarchy and delegated authority, and how do authority controls alter wrong-version exposure and false blocking?",
+    "method": "Design Science Research using a 16,000-case synthetic stress test with hidden exceptions and superseded-text conditions.",
+    "findings": "Wrong-authority exposure fell from 0.2209 in the baseline to 0.0000 under governed controls, while the false-block population rate fell from 0.1003 to 0.0327.",
+    "contribution": "Treats contract hierarchy and delegated authority as executable governance mechanisms rather than post-processing review.",
+    "keywords": "Capital projects; contracts; change orders; NLP; authority; compliance"
   },
   {
     "group": "Capital Projects, Facilities & Real Estate Research",
@@ -123,11 +177,17 @@
     "type": "Research Manuscript",
     "status": "Research manuscript",
     "year": "2026",
-    "version": "Research Manuscript \u2014 2026",
+    "version": "Research Manuscript — 2026",
     "topic": "Facilities Management",
     "platform": "Current manuscript",
     "canonical_url": "",
-    "doi": ""
+    "doi": "",
+    "abstract": "Presents a governed facilities-management architecture in which AI assists request classification, urgency prediction, knowledge retrieval, and service recommendations while deterministic policy and accountable operators govern work execution.",
+    "research_question": "Can facilities-service requests be prioritized reproducibly from operational signals, and how should AI recommendations interact with safety, SLA, vendor, and dispatch controls?",
+    "method": "Design Science Research using a 24,000-request synthetic benchmark comparing interpretable and ensemble urgency models.",
+    "findings": "Logistic regression achieved ROC-AUC 0.9443 and F1 0.7906; random forest achieved ROC-AUC 0.9405 and F1 0.7799 on the controlled benchmark.",
+    "contribution": "Connects predictive service prioritization with operational control boundaries across safety, vendor, SLA, and work-order execution.",
+    "keywords": "Facilities management; work orders; maintenance; service delivery; AI governance"
   },
   {
     "group": "Capital Projects, Facilities & Real Estate Research",
@@ -136,11 +196,17 @@
     "type": "Research Manuscript",
     "status": "Research manuscript",
     "year": "2026",
-    "version": "Research Manuscript \u2014 2026",
+    "version": "Research Manuscript — 2026",
     "topic": "Enterprise Asset Management",
     "platform": "Current manuscript",
     "canonical_url": "",
-    "doi": ""
+    "doi": "",
+    "abstract": "Proposes a governed EAM architecture for asset-health interpretation, failure-risk prediction, maintenance prioritization, and human-controlled work execution.",
+    "research_question": "How accurately can asset failure risk be estimated from multi-signal condition/history data, and how should predictive risk be converted into governed maintenance actions?",
+    "method": "Design Science Research using a reproducible 26,000-event synthetic asset benchmark.",
+    "findings": "Logistic regression achieved ROC-AUC 0.8337 and F1 0.5126; random forest achieved ROC-AUC 0.8198 and F1 0.5719 in the controlled benchmark.",
+    "contribution": "Separates predictive maintenance evidence from deterministic safety, authorization, and system-of-record controls.",
+    "keywords": "Enterprise asset management; predictive maintenance; reliability; failure prediction; AI governance"
   },
   {
     "group": "Capital Projects, Facilities & Real Estate Research",
@@ -149,11 +215,17 @@
     "type": "Research Manuscript",
     "status": "Research manuscript",
     "year": "2026",
-    "version": "Research Manuscript \u2014 2026",
+    "version": "Research Manuscript — 2026",
     "topic": "Real Estate / IWMS",
     "platform": "Current manuscript",
     "canonical_url": "",
-    "doi": ""
+    "doi": "",
+    "abstract": "Proposes a governed AI architecture for location entity resolution, duplicate detection, hierarchy validation, geospatial enrichment, cross-system reconciliation, and human stewardship.",
+    "research_question": "Can AI improve location entity resolution and data-quality detection across real-estate hierarchies, and which corrections require deterministic validation and stewardship?",
+    "method": "Design Science Research using a reproducible 20,000-record synthetic location benchmark.",
+    "findings": "The AI-only method achieved 0.7178 accuracy, 0.7006 precision, and 0.9407 recall; governed rule-consistency checks reached 1.0000 on all three measures within the synthetic benchmark.",
+    "contribution": "Frames location intelligence as an enterprise master-data governance problem rather than merely a geocoding task.",
+    "keywords": "Real estate; location intelligence; master data; entity resolution; data quality"
   },
   {
     "group": "Capital Projects, Facilities & Real Estate Research",
@@ -162,11 +234,17 @@
     "type": "Research Manuscript",
     "status": "Research manuscript",
     "year": "2026",
-    "version": "Research Manuscript \u2014 2026",
+    "version": "Research Manuscript — 2026",
     "topic": "Real Estate / IWMS",
     "platform": "Current manuscript",
     "canonical_url": "",
-    "doi": ""
+    "doi": "",
+    "abstract": "Proposes a governed lease-intelligence architecture in which AI supports lease interpretation and portfolio decisions while authoritative lease records, accounting policies, controls, and accountable professionals govern financial execution.",
+    "research_question": "How can AI support lease interpretation without becoming an accounting authority, and how should version, payment-schedule, and source-authority controls govern lease intelligence?",
+    "method": "Design Science Research using a 15,000-case synthetic lease benchmark.",
+    "findings": "The AI-only method achieved 0.8345 accuracy, 0.9651 precision, and 0.8267 recall; governed rule-consistency checks reached 1.0000 within the modeled benchmark. The paper explicitly does not treat this as a substitute for field/accounting validation.",
+    "contribution": "Defines a governed separation between probabilistic lease interpretation and authoritative financial execution.",
+    "keywords": "Real estate; lease accounting; lease intelligence; compliance; AI governance"
   },
   {
     "group": "Business Articles",
@@ -179,6 +257,12 @@
     "topic": "Enterprise AI & Procurement",
     "platform": "LinkedIn",
     "canonical_url": "https://www.linkedin.com/in/pawankumarsingh/recent-activity/articles/",
-    "doi": ""
+    "doi": "",
+    "abstract": "A practitioner article explaining a governed approach to AI-assisted purchase requisitions in which AI interprets and drafts, rules validate, humans govern, and ERP executes.",
+    "research_question": "How can AI simplify the employee procurement experience without weakening enterprise controls?",
+    "method": "Business-facing synthesis of the purchase-requisition research program and its controlled evaluation.",
+    "findings": "Highlights the 24,000-request controlled benchmark, including 78.5% category-classification accuracy and 9.8% to 0.0% unsafe ERP submissions within the evaluated benchmark.",
+    "contribution": "Translates the underlying research into a practical enterprise-management argument about separating AI flexibility from transaction authority.",
+    "keywords": "Enterprise AI; procurement; ERP; generative AI; procure-to-pay; digital transformation"
   }
 ]
